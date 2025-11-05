@@ -1,0 +1,2 @@
+[console_scripts]
+demo_behaviors_node = spider_bringup.demo_behaviors_node:main

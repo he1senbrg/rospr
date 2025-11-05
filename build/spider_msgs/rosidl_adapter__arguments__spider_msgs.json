@@ -1,0 +1,12 @@
+{
+  "package_name": "spider_msgs",
+  "non_idl_tuples": [
+    "/home/loki/ros2_ws/src/spider_msgs:msg/ServoPosition.msg",
+    "/home/loki/ros2_ws/src/spider_msgs:msg/ServoArray.msg",
+    "/home/loki/ros2_ws/src/spider_msgs:msg/LegPosition.msg",
+    "/home/loki/ros2_ws/src/spider_msgs:msg/LegPositions.msg",
+    "/home/loki/ros2_ws/src/spider_msgs:msg/RobotState.msg",
+    "/home/loki/ros2_ws/src/spider_msgs:srv/ExecuteBehavior.srv",
+    "/home/loki/ros2_ws/src/spider_msgs:srv/SetPose.srv"
+  ]
+}

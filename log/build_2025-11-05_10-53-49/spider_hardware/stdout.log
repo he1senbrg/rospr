@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/spider_hardware/spider_hardware.egg-info/PKG-INFO
+writing dependency_links to ../../build/spider_hardware/spider_hardware.egg-info/dependency_links.txt
+writing entry points to ../../build/spider_hardware/spider_hardware.egg-info/entry_points.txt
+writing requirements to ../../build/spider_hardware/spider_hardware.egg-info/requires.txt
+writing top-level names to ../../build/spider_hardware/spider_hardware.egg-info/top_level.txt
+reading manifest file '../../build/spider_hardware/spider_hardware.egg-info/SOURCES.txt'
+writing manifest file '../../build/spider_hardware/spider_hardware.egg-info/SOURCES.txt'
+running build
+running build_py
+copying spider_hardware/servo_controller_node.py -> /home/loki/ros2_ws/build/spider_hardware/build/lib/spider_hardware
+running install
+running install_lib
+copying /home/loki/ros2_ws/build/spider_hardware/build/lib/spider_hardware/servo_controller_node.py -> /home/loki/ros2_ws/install/spider_hardware/lib/python3.12/site-packages/spider_hardware
+byte-compiling /home/loki/ros2_ws/install/spider_hardware/lib/python3.12/site-packages/spider_hardware/servo_controller_node.py to servo_controller_node.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/loki/ros2_ws/install/spider_hardware/lib/python3.12/site-packages/spider_hardware-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/spider_hardware/spider_hardware.egg-info to /home/loki/ros2_ws/install/spider_hardware/lib/python3.12/site-packages/spider_hardware-0.0.0-py3.12.egg-info
+running install_scripts
+Installing servo_controller_node script to /home/loki/ros2_ws/install/spider_hardware/lib/spider_hardware
+writing list of installed files to '/home/loki/ros2_ws/build/spider_hardware/install.log'

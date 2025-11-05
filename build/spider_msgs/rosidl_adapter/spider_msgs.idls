@@ -1,0 +1,7 @@
+/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:msg/ServoPosition.idl
+/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:msg/ServoArray.idl
+/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:msg/LegPosition.idl
+/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:msg/LegPositions.idl
+/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:msg/RobotState.idl
+/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:srv/ExecuteBehavior.idl
+/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:srv/SetPose.idl

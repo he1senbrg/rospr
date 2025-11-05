@@ -1,0 +1,24 @@
+[1.261s] Invoking command in '/home/loki/ros2_ws/src/spider_behavior': AMENT_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/loki/ros2_ws/install/spider_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loki/ros2_ws/build/spider_behavior/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loki/ros2_ws/install/spider_behavior/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spider_behavior build --build-base /home/loki/ros2_ws/build/spider_behavior/build install --record /home/loki/ros2_ws/build/spider_behavior/install.log --single-version-externally-managed install_data
+[1.480s] running egg_info
+[1.497s] writing ../../build/spider_behavior/spider_behavior.egg-info/PKG-INFO
+[1.498s] writing dependency_links to ../../build/spider_behavior/spider_behavior.egg-info/dependency_links.txt
+[1.498s] writing entry points to ../../build/spider_behavior/spider_behavior.egg-info/entry_points.txt
+[1.498s] writing requirements to ../../build/spider_behavior/spider_behavior.egg-info/requires.txt
+[1.498s] writing top-level names to ../../build/spider_behavior/spider_behavior.egg-info/top_level.txt
+[1.533s] reading manifest file '../../build/spider_behavior/spider_behavior.egg-info/SOURCES.txt'
+[1.534s] writing manifest file '../../build/spider_behavior/spider_behavior.egg-info/SOURCES.txt'
+[1.534s] running build
+[1.534s] running build_py
+[1.535s] copying spider_behavior/behavior_controller_node.py -> /home/loki/ros2_ws/build/spider_behavior/build/lib/spider_behavior
+[1.535s] running install
+[1.541s] running install_lib
+[1.558s] copying /home/loki/ros2_ws/build/spider_behavior/build/lib/spider_behavior/behavior_controller_node.py -> /home/loki/ros2_ws/install/spider_behavior/lib/python3.12/site-packages/spider_behavior
+[1.558s] byte-compiling /home/loki/ros2_ws/install/spider_behavior/lib/python3.12/site-packages/spider_behavior/behavior_controller_node.py to behavior_controller_node.cpython-312.pyc
+[1.560s] running install_data
+[1.560s] running install_egg_info
+[1.578s] removing '/home/loki/ros2_ws/install/spider_behavior/lib/python3.12/site-packages/spider_behavior-0.0.0-py3.12.egg-info' (and everything under it)
+[1.578s] Copying ../../build/spider_behavior/spider_behavior.egg-info to /home/loki/ros2_ws/install/spider_behavior/lib/python3.12/site-packages/spider_behavior-0.0.0-py3.12.egg-info
+[1.579s] running install_scripts
+[1.692s] Installing behavior_controller_node script to /home/loki/ros2_ws/install/spider_behavior/lib/spider_behavior
+[1.692s] writing list of installed files to '/home/loki/ros2_ws/build/spider_behavior/install.log'
+[1.737s] Invoked command in '/home/loki/ros2_ws/src/spider_behavior' returned '0': AMENT_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/loki/ros2_ws/install/spider_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loki/ros2_ws/build/spider_behavior/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loki/ros2_ws/install/spider_behavior/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spider_behavior build --build-base /home/loki/ros2_ws/build/spider_behavior/build install --record /home/loki/ros2_ws/build/spider_behavior/install.log --single-version-externally-managed install_data

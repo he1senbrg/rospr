@@ -1,0 +1,6 @@
+Invoking command in '/home/loki/ros2_ws/build/spider_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/loki/ros2_ws/src/spider_msgs -DCMAKE_INSTALL_PREFIX=/home/loki/ros2_ws/install/spider_msgs
+Invoked command in '/home/loki/ros2_ws/build/spider_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake /home/loki/ros2_ws/src/spider_msgs -DCMAKE_INSTALL_PREFIX=/home/loki/ros2_ws/install/spider_msgs
+Invoking command in '/home/loki/ros2_ws/build/spider_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/loki/ros2_ws/build/spider_msgs -- -j16 -l16
+Invoked command in '/home/loki/ros2_ws/build/spider_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/loki/ros2_ws/build/spider_msgs -- -j16 -l16
+Invoking command in '/home/loki/ros2_ws/build/spider_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/loki/ros2_ws/build/spider_msgs
+Invoked command in '/home/loki/ros2_ws/build/spider_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/loki/ros2_ws/build/spider_msgs

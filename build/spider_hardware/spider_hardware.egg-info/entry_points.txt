@@ -1,0 +1,2 @@
+[console_scripts]
+servo_controller_node = spider_hardware.servo_controller_node:main

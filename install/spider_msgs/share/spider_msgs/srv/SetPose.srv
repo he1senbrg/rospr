@@ -1,0 +1,6 @@
+# Set robot pose directly
+LegPositions target_pose         # Desired leg positions
+float32 movement_speed          # Speed to reach target
+---
+bool success                    # True if pose was set
+string message                  # Status message

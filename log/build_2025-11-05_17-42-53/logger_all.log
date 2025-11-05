@@ -1,0 +1,398 @@
+[0.127s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.127s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x78d106262870>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x78d1063bacf0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x78d1063bacf0>>, mixin_verb=('build',))
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.173s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/loki/ros2_ws'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extension 'ignore_ament_install'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extension 'ros'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extensions ['cmake', 'python']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extension 'cmake'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extension 'python'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extensions ['python_setup_py']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference) by extension 'python_setup_py'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extension 'ros'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extensions ['cmake', 'python']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(reference/3d_models) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_behavior) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_behavior) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_behavior) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_behavior) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_behavior) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_behavior) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_behavior) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_behavior) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_behavior) by extension 'ros'
+[0.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/spider_behavior' with type 'ros.ament_python' and name 'spider_behavior'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_bringup) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_bringup) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_bringup) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_bringup) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_bringup) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_bringup) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_bringup) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_bringup) by extension 'ros'
+[0.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/spider_bringup' with type 'ros.ament_python' and name 'spider_bringup'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_hardware) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_hardware) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_hardware) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_hardware) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_hardware) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_hardware) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_hardware) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_hardware) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_hardware) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/spider_hardware' with type 'ros.ament_python' and name 'spider_hardware'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_kinematics) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_kinematics) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_kinematics) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_kinematics) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_kinematics) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_kinematics) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_kinematics) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_kinematics) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_kinematics) by extension 'ros'
+[0.213s] DEBUG:colcon.colcon_core.package_identification:Package 'src/spider_kinematics' with type 'ros.ament_python' and name 'spider_kinematics'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_msgs) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_msgs) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_msgs) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_msgs) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_msgs) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_msgs) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_msgs) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/spider_msgs) by extension 'ros'
+[0.214s] DEBUG:colcon.colcon_core.package_identification:Package 'src/spider_msgs' with type 'ros.ament_cmake' and name 'spider_msgs'
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.237s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 370 installed packages in /opt/ros/kilted
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'spider_msgs' build argument 'cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'spider_msgs' build argument 'cmake_target' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'spider_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'spider_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'spider_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'spider_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'spider_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.294s] DEBUG:colcon.colcon_core.verb:Building package 'spider_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/loki/ros2_ws/build/spider_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/loki/ros2_ws/install/spider_msgs', 'merge_install': False, 'path': '/home/loki/ros2_ws/src/spider_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_behavior' build argument 'cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_behavior' build argument 'cmake_target' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_behavior' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_behavior' build argument 'cmake_clean_cache' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_behavior' build argument 'cmake_clean_first' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_behavior' build argument 'cmake_force_configure' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_behavior' build argument 'ament_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_behavior' build argument 'catkin_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_behavior' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.294s] DEBUG:colcon.colcon_core.verb:Building package 'spider_behavior' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/loki/ros2_ws/build/spider_behavior', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/loki/ros2_ws/install/spider_behavior', 'merge_install': False, 'path': '/home/loki/ros2_ws/src/spider_behavior', 'symlink_install': False, 'test_result_base': None}
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_hardware' build argument 'cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_hardware' build argument 'cmake_target' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'spider_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.295s] DEBUG:colcon.colcon_core.verb:Building package 'spider_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/loki/ros2_ws/build/spider_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/loki/ros2_ws/install/spider_hardware', 'merge_install': False, 'path': '/home/loki/ros2_ws/src/spider_hardware', 'symlink_install': False, 'test_result_base': None}
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_kinematics' build argument 'cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_kinematics' build argument 'cmake_target' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_kinematics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_kinematics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_kinematics' build argument 'cmake_clean_first' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_kinematics' build argument 'cmake_force_configure' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_kinematics' build argument 'ament_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_kinematics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_kinematics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.295s] DEBUG:colcon.colcon_core.verb:Building package 'spider_kinematics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/loki/ros2_ws/build/spider_kinematics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/loki/ros2_ws/install/spider_kinematics', 'merge_install': False, 'path': '/home/loki/ros2_ws/src/spider_kinematics', 'symlink_install': False, 'test_result_base': None}
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_bringup' build argument 'cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_bringup' build argument 'cmake_target' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'spider_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'spider_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'spider_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'spider_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.296s] DEBUG:colcon.colcon_core.verb:Building package 'spider_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/loki/ros2_ws/build/spider_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/loki/ros2_ws/install/spider_bringup', 'merge_install': False, 'path': '/home/loki/ros2_ws/src/spider_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.296s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.297s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.297s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/loki/ros2_ws/src/spider_msgs' with build type 'ament_cmake'
+[0.297s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/loki/ros2_ws/src/spider_msgs'
+[0.299s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.300s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.300s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/loki/ros2_ws/build/spider_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/loki/ros2_ws/build/spider_msgs -- -j16 -l16
+[0.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/loki/ros2_ws/build/spider_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --build /home/loki/ros2_ws/build/spider_msgs -- -j16 -l16
+[0.779s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/loki/ros2_ws/build/spider_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/loki/ros2_ws/build/spider_msgs
+[0.833s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spider_msgs)
+[0.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/loki/ros2_ws/build/spider_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted /usr/bin/cmake --install /home/loki/ros2_ws/build/spider_msgs
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs' for CMake module files
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs' for CMake config files
+[0.835s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_msgs', 'cmake_prefix_path')
+[0.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/cmake_prefix_path.ps1'
+[0.836s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/cmake_prefix_path.dsv'
+[0.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/cmake_prefix_path.sh'
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs/lib'
+[0.837s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_msgs', 'ld_library_path_lib')
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/ld_library_path_lib.ps1'
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/ld_library_path_lib.dsv'
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/ld_library_path_lib.sh'
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs/bin'
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs/lib/pkgconfig/spider_msgs.pc'
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages'
+[0.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_msgs', 'pythonpath')
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/pythonpath.ps1'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/pythonpath.dsv'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/pythonpath.sh'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs/bin'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/package.ps1'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/package.dsv'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/package.sh'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/package.bash'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/package.zsh'
+[0.842s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/loki/ros2_ws/install/spider_msgs/share/colcon-core/packages/spider_msgs)
+[0.842s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spider_msgs)
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs' for CMake module files
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs' for CMake config files
+[0.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_msgs', 'cmake_prefix_path')
+[0.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/cmake_prefix_path.ps1'
+[0.844s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/cmake_prefix_path.dsv'
+[0.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/cmake_prefix_path.sh'
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs/lib'
+[0.845s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_msgs', 'ld_library_path_lib')
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/ld_library_path_lib.ps1'
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/ld_library_path_lib.dsv'
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/ld_library_path_lib.sh'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs/bin'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs/lib/pkgconfig/spider_msgs.pc'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages'
+[0.846s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_msgs', 'pythonpath')
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/pythonpath.ps1'
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/pythonpath.dsv'
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/hook/pythonpath.sh'
+[0.847s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_msgs/bin'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/package.ps1'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/package.dsv'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/package.sh'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/package.bash'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_msgs/share/spider_msgs/package.zsh'
+[0.849s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/loki/ros2_ws/install/spider_msgs/share/colcon-core/packages/spider_msgs)
+[0.849s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/loki/ros2_ws/src/spider_behavior' with build type 'ament_python'
+[0.849s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_behavior', 'ament_prefix_path')
+[0.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_behavior/share/spider_behavior/hook/ament_prefix_path.ps1'
+[0.850s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_behavior/share/spider_behavior/hook/ament_prefix_path.dsv'
+[0.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_behavior/share/spider_behavior/hook/ament_prefix_path.sh'
+[0.850s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.850s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.853s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/loki/ros2_ws/src/spider_hardware' with build type 'ament_python'
+[0.853s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_hardware', 'ament_prefix_path')
+[0.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_hardware/share/spider_hardware/hook/ament_prefix_path.ps1'
+[0.854s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_hardware/share/spider_hardware/hook/ament_prefix_path.dsv'
+[0.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_hardware/share/spider_hardware/hook/ament_prefix_path.sh'
+[0.855s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.855s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.858s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/loki/ros2_ws/src/spider_kinematics' with build type 'ament_python'
+[0.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_kinematics', 'ament_prefix_path')
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_kinematics/share/spider_kinematics/hook/ament_prefix_path.ps1'
+[0.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_kinematics/share/spider_kinematics/hook/ament_prefix_path.dsv'
+[0.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_kinematics/share/spider_kinematics/hook/ament_prefix_path.sh'
+[0.859s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.860s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.040s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/loki/ros2_ws/src/spider_behavior'
+[1.040s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.040s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.209s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/loki/ros2_ws/src/spider_hardware'
+[1.209s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.209s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.379s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/loki/ros2_ws/src/spider_kinematics'
+[1.379s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.379s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.888s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/loki/ros2_ws/src/spider_kinematics': AMENT_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/loki/ros2_ws/install/spider_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loki/ros2_ws/build/spider_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loki/ros2_ws/install/spider_kinematics/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spider_kinematics build --build-base /home/loki/ros2_ws/build/spider_kinematics/build install --record /home/loki/ros2_ws/build/spider_kinematics/install.log --single-version-externally-managed install_data
+[1.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/loki/ros2_ws/src/spider_hardware': AMENT_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/loki/ros2_ws/install/spider_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loki/ros2_ws/build/spider_hardware/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loki/ros2_ws/install/spider_hardware/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spider_hardware build --build-base /home/loki/ros2_ws/build/spider_hardware/build install --record /home/loki/ros2_ws/build/spider_hardware/install.log --single-version-externally-managed install_data
+[1.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/loki/ros2_ws/src/spider_behavior': AMENT_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/loki/ros2_ws/install/spider_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loki/ros2_ws/build/spider_behavior/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loki/ros2_ws/install/spider_behavior/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spider_behavior build --build-base /home/loki/ros2_ws/build/spider_behavior/build install --record /home/loki/ros2_ws/build/spider_behavior/install.log --single-version-externally-managed install_data
+[2.361s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_kinematics' for CMake module files
+[2.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/loki/ros2_ws/src/spider_kinematics' returned '0': AMENT_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/loki/ros2_ws/install/spider_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loki/ros2_ws/build/spider_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loki/ros2_ws/install/spider_kinematics/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spider_kinematics build --build-base /home/loki/ros2_ws/build/spider_kinematics/build install --record /home/loki/ros2_ws/build/spider_kinematics/install.log --single-version-externally-managed install_data
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_kinematics' for CMake config files
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_kinematics/lib'
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_kinematics/bin'
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_kinematics/lib/pkgconfig/spider_kinematics.pc'
+[2.363s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_kinematics/lib/python3.12/site-packages'
+[2.363s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_kinematics', 'pythonpath')
+[2.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_kinematics/share/spider_kinematics/hook/pythonpath.ps1'
+[2.363s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_kinematics/share/spider_kinematics/hook/pythonpath.dsv'
+[2.364s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_kinematics/share/spider_kinematics/hook/pythonpath.sh'
+[2.364s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_kinematics/bin'
+[2.364s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spider_kinematics)
+[2.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_kinematics/share/spider_kinematics/package.ps1'
+[2.365s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/loki/ros2_ws/install/spider_kinematics/share/spider_kinematics/package.dsv'
+[2.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_kinematics/share/spider_kinematics/package.sh'
+[2.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_kinematics/share/spider_kinematics/package.bash'
+[2.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_kinematics/share/spider_kinematics/package.zsh'
+[2.366s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/loki/ros2_ws/install/spider_kinematics/share/colcon-core/packages/spider_kinematics)
+[2.367s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_behavior' for CMake module files
+[2.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/loki/ros2_ws/src/spider_behavior' returned '0': AMENT_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/loki/ros2_ws/install/spider_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loki/ros2_ws/build/spider_behavior/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loki/ros2_ws/install/spider_behavior/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spider_behavior build --build-base /home/loki/ros2_ws/build/spider_behavior/build install --record /home/loki/ros2_ws/build/spider_behavior/install.log --single-version-externally-managed install_data
+[2.368s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_behavior' for CMake config files
+[2.368s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_behavior/lib'
+[2.369s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_behavior/bin'
+[2.369s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_behavior/lib/pkgconfig/spider_behavior.pc'
+[2.369s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_behavior/lib/python3.12/site-packages'
+[2.369s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_behavior', 'pythonpath')
+[2.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_behavior/share/spider_behavior/hook/pythonpath.ps1'
+[2.369s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_behavior/share/spider_behavior/hook/pythonpath.dsv'
+[2.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_behavior/share/spider_behavior/hook/pythonpath.sh'
+[2.370s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_behavior/bin'
+[2.370s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spider_behavior)
+[2.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_behavior/share/spider_behavior/package.ps1'
+[2.370s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/loki/ros2_ws/install/spider_behavior/share/spider_behavior/package.dsv'
+[2.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_behavior/share/spider_behavior/package.sh'
+[2.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_behavior/share/spider_behavior/package.bash'
+[2.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_behavior/share/spider_behavior/package.zsh'
+[2.372s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/loki/ros2_ws/install/spider_behavior/share/colcon-core/packages/spider_behavior)
+[2.373s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_hardware' for CMake module files
+[2.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/loki/ros2_ws/src/spider_hardware' returned '0': AMENT_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/loki/ros2_ws/install/spider_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loki/ros2_ws/build/spider_hardware/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loki/ros2_ws/install/spider_hardware/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spider_hardware build --build-base /home/loki/ros2_ws/build/spider_hardware/build install --record /home/loki/ros2_ws/build/spider_hardware/install.log --single-version-externally-managed install_data
+[2.374s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_hardware' for CMake config files
+[2.374s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_hardware/lib'
+[2.374s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_hardware/bin'
+[2.374s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_hardware/lib/pkgconfig/spider_hardware.pc'
+[2.374s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_hardware/lib/python3.12/site-packages'
+[2.374s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_hardware', 'pythonpath')
+[2.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_hardware/share/spider_hardware/hook/pythonpath.ps1'
+[2.375s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_hardware/share/spider_hardware/hook/pythonpath.dsv'
+[2.375s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_hardware/share/spider_hardware/hook/pythonpath.sh'
+[2.376s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_hardware/bin'
+[2.376s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spider_hardware)
+[2.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_hardware/share/spider_hardware/package.ps1'
+[2.376s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/loki/ros2_ws/install/spider_hardware/share/spider_hardware/package.dsv'
+[2.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_hardware/share/spider_hardware/package.sh'
+[2.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_hardware/share/spider_hardware/package.bash'
+[2.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_hardware/share/spider_hardware/package.zsh'
+[2.377s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/loki/ros2_ws/install/spider_hardware/share/colcon-core/packages/spider_hardware)
+[2.378s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/loki/ros2_ws/src/spider_bringup' with build type 'ament_python'
+[2.378s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_bringup', 'ament_prefix_path')
+[2.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_bringup/share/spider_bringup/hook/ament_prefix_path.ps1'
+[2.378s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_bringup/share/spider_bringup/hook/ament_prefix_path.dsv'
+[2.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_bringup/share/spider_bringup/hook/ament_prefix_path.sh'
+[2.379s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.379s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.582s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/loki/ros2_ws/src/spider_bringup'
+[2.583s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.583s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.068s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/loki/ros2_ws/src/spider_bringup': AMENT_PREFIX_PATH=/home/loki/ros2_ws/install/spider_kinematics:/home/loki/ros2_ws/install/spider_hardware:/home/loki/ros2_ws/install/spider_behavior:/home/loki/ros2_ws/install/spider_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/loki/ros2_ws/install/spider_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loki/ros2_ws/build/spider_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loki/ros2_ws/install/spider_bringup/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_kinematics/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_hardware/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_behavior/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spider_bringup build --build-base /home/loki/ros2_ws/build/spider_bringup/build install --record /home/loki/ros2_ws/build/spider_bringup/install.log --single-version-externally-managed install_data
+[3.511s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_bringup' for CMake module files
+[3.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/loki/ros2_ws/src/spider_bringup' returned '0': AMENT_PREFIX_PATH=/home/loki/ros2_ws/install/spider_kinematics:/home/loki/ros2_ws/install/spider_hardware:/home/loki/ros2_ws/install/spider_behavior:/home/loki/ros2_ws/install/spider_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/loki/ros2_ws/install/spider_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/loki/ros2_ws/install/spider_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/loki/ros2_ws/build/spider_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loki/ros2_ws/install/spider_bringup/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_kinematics/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_hardware/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_behavior/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spider_bringup build --build-base /home/loki/ros2_ws/build/spider_bringup/build install --record /home/loki/ros2_ws/build/spider_bringup/install.log --single-version-externally-managed install_data
+[3.512s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_bringup' for CMake config files
+[3.512s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_bringup/lib'
+[3.513s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_bringup/bin'
+[3.513s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_bringup/lib/pkgconfig/spider_bringup.pc'
+[3.513s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_bringup/lib/python3.12/site-packages'
+[3.513s] Level 1:colcon.colcon_core.shell:create_environment_hook('spider_bringup', 'pythonpath')
+[3.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_bringup/share/spider_bringup/hook/pythonpath.ps1'
+[3.514s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/loki/ros2_ws/install/spider_bringup/share/spider_bringup/hook/pythonpath.dsv'
+[3.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/loki/ros2_ws/install/spider_bringup/share/spider_bringup/hook/pythonpath.sh'
+[3.514s] Level 1:colcon.colcon_core.environment:checking '/home/loki/ros2_ws/install/spider_bringup/bin'
+[3.514s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spider_bringup)
+[3.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_bringup/share/spider_bringup/package.ps1'
+[3.515s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/loki/ros2_ws/install/spider_bringup/share/spider_bringup/package.dsv'
+[3.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_bringup/share/spider_bringup/package.sh'
+[3.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_bringup/share/spider_bringup/package.bash'
+[3.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/loki/ros2_ws/install/spider_bringup/share/spider_bringup/package.zsh'
+[3.516s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/loki/ros2_ws/install/spider_bringup/share/colcon-core/packages/spider_bringup)
+[3.516s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.517s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.517s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.517s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.521s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.521s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.521s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.541s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.541s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/loki/ros2_ws/install/local_setup.ps1'
+[3.542s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/loki/ros2_ws/install/_local_setup_util_ps1.py'
+[3.543s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/loki/ros2_ws/install/setup.ps1'
+[3.544s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/loki/ros2_ws/install/local_setup.sh'
+[3.544s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/loki/ros2_ws/install/_local_setup_util_sh.py'
+[3.545s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/loki/ros2_ws/install/setup.sh'
+[3.545s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/loki/ros2_ws/install/local_setup.bash'
+[3.546s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/loki/ros2_ws/install/setup.bash'
+[3.547s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/loki/ros2_ws/install/local_setup.zsh'
+[3.547s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/loki/ros2_ws/install/setup.zsh'

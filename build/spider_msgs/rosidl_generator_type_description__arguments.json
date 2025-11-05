@@ -1,0 +1,19 @@
+{
+  "package_name": "spider_msgs",
+  "output_dir": "/home/loki/ros2_ws/build/spider_msgs/rosidl_generator_type_description/spider_msgs",
+  "idl_tuples": [
+    "/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:msg/ServoPosition.idl",
+    "/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:msg/ServoArray.idl",
+    "/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:msg/LegPosition.idl",
+    "/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:msg/LegPositions.idl",
+    "/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:msg/RobotState.idl",
+    "/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:srv/ExecuteBehavior.idl",
+    "/home/loki/ros2_ws/build/spider_msgs/rosidl_adapter/spider_msgs:srv/SetPose.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/kilted/share/std_msgs",
+    "builtin_interfaces:/opt/ros/kilted/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/kilted/share/geometry_msgs",
+    "service_msgs:/opt/ros/kilted/share/service_msgs"
+  ]
+}

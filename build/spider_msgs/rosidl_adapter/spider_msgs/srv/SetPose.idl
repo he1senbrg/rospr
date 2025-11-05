@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from spider_msgs/srv/SetPose.srv
+// generated code does not contain a copyright notice
+
+#include "spider_msgs/msg/LegPositions.idl"
+
+module spider_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Set robot pose directly")
+    struct SetPose_Request {
+      @verbatim (language="comment", text=
+        "Desired leg positions")
+      spider_msgs::msg::LegPositions target_pose;
+
+      @verbatim (language="comment", text=
+        "Speed to reach target")
+      float movement_speed;
+    };
+    struct SetPose_Response {
+      @verbatim (language="comment", text=
+        "True if pose was set")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "Status message")
+      string message;
+    };
+  };
+};

@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from spider_msgs/msg/ServoArray.msg
+// generated code does not contain a copyright notice
+
+#include "spider_msgs/msg/ServoPosition.idl"
+
+module spider_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Array of servo position commands")
+    struct ServoArray {
+      sequence<spider_msgs::msg::ServoPosition> servos;
+    };
+  };
+};

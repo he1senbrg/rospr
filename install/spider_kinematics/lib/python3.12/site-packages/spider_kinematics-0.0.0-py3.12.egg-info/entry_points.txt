@@ -1,0 +1,2 @@
+[console_scripts]
+kinematics_node = spider_kinematics.kinematics_node:main

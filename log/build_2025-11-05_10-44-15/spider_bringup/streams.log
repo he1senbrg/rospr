@@ -1,0 +1,22 @@
+[0.696s] Invoking command in '/home/loki/ros2_ws/src/spider_bringup': AMENT_PREFIX_PATH=/home/loki/ros2_ws/install/spider_kinematics:/home/loki/ros2_ws/install/spider_hardware:/home/loki/ros2_ws/install/spider_behavior:/home/loki/ros2_ws/install/spider_bringup:/home/loki/ros2_ws/install/spider_msgs:/opt/ros/kilted PYTHONPATH=/home/loki/ros2_ws/build/spider_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loki/ros2_ws/install/spider_bringup/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_kinematics/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_hardware/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_behavior/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_bringup/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spider_bringup build --build-base /home/loki/ros2_ws/build/spider_bringup/build install --record /home/loki/ros2_ws/build/spider_bringup/install.log --single-version-externally-managed install_data
+[0.920s] running egg_info
+[0.937s] writing ../../build/spider_bringup/spider_bringup.egg-info/PKG-INFO
+[0.937s] writing dependency_links to ../../build/spider_bringup/spider_bringup.egg-info/dependency_links.txt
+[0.938s] writing entry points to ../../build/spider_bringup/spider_bringup.egg-info/entry_points.txt
+[0.938s] writing requirements to ../../build/spider_bringup/spider_bringup.egg-info/requires.txt
+[0.938s] writing top-level names to ../../build/spider_bringup/spider_bringup.egg-info/top_level.txt
+[0.971s] reading manifest file '../../build/spider_bringup/spider_bringup.egg-info/SOURCES.txt'
+[0.972s] writing manifest file '../../build/spider_bringup/spider_bringup.egg-info/SOURCES.txt'
+[0.972s] running build
+[0.972s] running build_py
+[0.973s] running install
+[0.977s] running install_lib
+[0.995s] running install_data
+[0.995s] copying launch/spider_robot.launch.py -> /home/loki/ros2_ws/install/spider_bringup/share/spider_bringup/launch
+[0.995s] running install_egg_info
+[1.013s] removing '/home/loki/ros2_ws/install/spider_bringup/lib/python3.12/site-packages/spider_bringup-0.0.0-py3.12.egg-info' (and everything under it)
+[1.013s] Copying ../../build/spider_bringup/spider_bringup.egg-info to /home/loki/ros2_ws/install/spider_bringup/lib/python3.12/site-packages/spider_bringup-0.0.0-py3.12.egg-info
+[1.014s] running install_scripts
+[1.129s] Installing demo_behaviors_node script to /home/loki/ros2_ws/install/spider_bringup/lib/spider_bringup
+[1.129s] writing list of installed files to '/home/loki/ros2_ws/build/spider_bringup/install.log'
+[1.158s] Invoked command in '/home/loki/ros2_ws/src/spider_bringup' returned '0': AMENT_PREFIX_PATH=/home/loki/ros2_ws/install/spider_kinematics:/home/loki/ros2_ws/install/spider_hardware:/home/loki/ros2_ws/install/spider_behavior:/home/loki/ros2_ws/install/spider_bringup:/home/loki/ros2_ws/install/spider_msgs:/opt/ros/kilted PYTHONPATH=/home/loki/ros2_ws/build/spider_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/loki/ros2_ws/install/spider_bringup/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_kinematics/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_hardware/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_behavior/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_msgs/lib/python3.12/site-packages:/home/loki/ros2_ws/install/spider_bringup/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spider_bringup build --build-base /home/loki/ros2_ws/build/spider_bringup/build install --record /home/loki/ros2_ws/build/spider_bringup/install.log --single-version-externally-managed install_data
