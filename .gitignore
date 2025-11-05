@@ -1,0 +1,11 @@
+# Build artifacts
+build/
+install/
+log/
+.ros/
+.vscode/
+
+# Python virtual environments
+venv/
+.venv/
+

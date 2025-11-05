@@ -68,6 +68,10 @@ class ServoControllerNode(Node):
         servo_rate = self.get_parameter('servo_rate').get_parameter_value().double_value
         self.timer = self.create_timer(1.0/servo_rate, self.control_loop)
         
+        # Target positions for smooth interpolation
+        self.target_angles = {}
+        self.movement_speeds = {}
+        
         self.get_logger().info("Servo Controller Node initialized")
     
     def init_hardware(self):
