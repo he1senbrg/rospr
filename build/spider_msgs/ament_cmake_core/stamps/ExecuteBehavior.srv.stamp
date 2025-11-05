@@ -1,7 +1,0 @@
-# Execute a specific behavior
-string behavior_name             # Name of behavior to execute
-int32 repetitions               # Number of times to repeat (-1 = infinite)
-float32 speed_multiplier        # Speed adjustment (1.0 = normal)
----
-bool success                    # True if behavior started successfully
-string message                  # Status or error message

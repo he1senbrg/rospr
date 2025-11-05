@@ -1,2 +1,0 @@
-[console_scripts]
-behavior_controller_node = spider_behavior.behavior_controller_node:main
