@@ -1,0 +1,93 @@
+# Xbox Controller Button Mapping for Spider Robot
+# 
+# Xbox Controller Layout:
+# Buttons: A(0), B(1), X(2), Y(3), LB(4), RB(5), Back(6), Start(7), Xbox(8), LS(9), RS(10)
+# Axes: LX(0), LY(1), LT(2), RX(3), RY(4), RT(5), DX(6), DY(7)
+
+# Dead zone for joystick axes (0.0 to 1.0)
+dead_zone: 0.15
+
+# Speed scaling factors
+speed_scales:
+  walk: 2.0       # Maximum speed multiplier for walking
+  turn: 1.5       # Maximum speed multiplier for turning  
+  gesture: 1.0    # Speed for gestures
+
+# Button mappings to spider behaviors
+button_mappings:
+  # Movement controls
+  0: "stand"           # A button - Stand up
+  1: "sit"             # B button - Sit down
+  2: null              # X button - Reserved
+  3: null              # Y button - Reserved
+  
+  # Gesture controls  
+  4: "hand_wave"       # Left Bumper - Wave gesture
+  5: "hand_shake"      # Right Bumper - Handshake gesture
+  6: null              # Back/Select - Reserved
+  7: null              # Start - Reserved
+  8: null              # Xbox button - Reserved
+  9: null              # Left stick click - Reserved
+  10: "body_dance"     # Right stick click - Dance
+
+# Axis mappings for continuous movement
+axis_mappings:
+  # Left stick - Walking forward/backward
+  left_stick_y:
+    axis: 1
+    behaviors:
+      positive: "step_back"    # Stick up = walk backward
+      negative: "step_forward" # Stick down = walk forward
+    
+  # Left stick - Strafing (not implemented yet)
+  left_stick_x:
+    axis: 0
+    behaviors:
+      positive: null
+      negative: null
+  
+  # Right stick - Turning
+  right_stick_x:
+    axis: 3
+    behaviors:
+      positive: "turn_right"   # Stick right = turn right
+      negative: "turn_left"    # Stick left = turn left
+      
+  # Right stick Y - Body movements (reserved for future)
+  right_stick_y:
+    axis: 4  
+    behaviors:
+      positive: null
+      negative: null
+
+# Trigger mappings (for variable speed control)
+trigger_mappings:
+  # Left trigger - Slow mode
+  left_trigger:
+    axis: 2
+    speed_factor: 0.3
+    
+  # Right trigger - Fast mode  
+  right_trigger:
+    axis: 5
+    speed_factor: 2.0
+
+# D-pad mappings (using hat/axis)
+dpad_mappings:
+  # D-pad for precise movements
+  horizontal:
+    axis: 6
+    behaviors:
+      positive: "turn_right"
+      negative: "turn_left"
+  vertical:
+    axis: 7  
+    behaviors:
+      positive: "step_back"
+      negative: "step_forward"
+
+# Timing settings
+timing:
+  button_repeat_rate: 0.1    # Minimum time between repeated button presses (seconds)
+  movement_update_rate: 20   # Hz for continuous movement updates
+  gesture_cooldown: 2.0      # Minimum time between gesture commands (seconds)
