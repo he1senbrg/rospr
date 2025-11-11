@@ -2,7 +2,7 @@
 """
 Servo Controller Node for Spider Robot
 Manages 12 servo motors with hardware abstraction layer
-Compatible with Raspberry Pi 5 using standard servo libraries
+Compatible with Raspberry Pi 5 using PCA9685 PWM driver
 """
 
 import rclpy
@@ -11,9 +11,8 @@ from spider_msgs.msg import ServoArray, ServoPosition
 import math
 import time
 try:
-    # For Raspberry Pi hardware
-    import RPi.GPIO as GPIO
-    from gpiozero import Servo
+    # For Raspberry Pi hardware with PCA9685
+    from adafruit_servokit import ServoKit
     HW_AVAILABLE = True
 except ImportError:
     # For simulation/testing without hardware
@@ -26,19 +25,23 @@ class ServoControllerNode(Node):
         super().__init__('servo_controller_node')
         
         # Declare parameters
-        self.declare_parameter('servo_pins', [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])
+        self.declare_parameter('servo_channels', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
         self.declare_parameter('min_angle', 0.0)
         self.declare_parameter('max_angle', 180.0)
         self.declare_parameter('servo_rate', 50.0)
+        self.declare_parameter('i2c_address', 0x40)  # Default PCA9685 address
         
-        # Servo configuration - GPIO pins for 12 servos (4 legs x 3 servos each)
-        servo_pin_list = self.get_parameter('servo_pins').get_parameter_value().integer_array_value
-        self.servo_pins = [
-            [servo_pin_list[0], servo_pin_list[1], servo_pin_list[2]],    # Leg 0 (front-right)
-            [servo_pin_list[3], servo_pin_list[4], servo_pin_list[5]],    # Leg 1 (front-left)
-            [servo_pin_list[6], servo_pin_list[7], servo_pin_list[8]],    # Leg 2 (back-right)  
-            [servo_pin_list[9], servo_pin_list[10], servo_pin_list[11]]   # Leg 3 (back-left)
+        # Servo configuration - PCA9685 channels for 12 servos (4 legs x 3 servos each)
+        servo_channel_list = self.get_parameter('servo_channels').get_parameter_value().integer_array_value
+        self.servo_channels = [
+            [servo_channel_list[0], servo_channel_list[1], servo_channel_list[2]],    # Leg 0 (front-right)
+            [servo_channel_list[3], servo_channel_list[4], servo_channel_list[5]],    # Leg 1 (front-left)
+            [servo_channel_list[6], servo_channel_list[7], servo_channel_list[8]],    # Leg 2 (back-right)  
+            [servo_channel_list[9], servo_channel_list[10], servo_channel_list[11]]   # Leg 3 (back-left)
         ]
+        
+        # PCA9685 I2C address
+        self.i2c_address = self.get_parameter('i2c_address').get_parameter_value().integer_value
         
         # Servo limits and calibration
         self.servo_limits = {
@@ -52,6 +55,7 @@ class ServoControllerNode(Node):
         self.current_angles = {}
         self.target_angles = {}
         self.movement_speeds = {}
+        self.kit = None
         self.initialized = False
         self.init_hardware()
         
@@ -71,18 +75,29 @@ class ServoControllerNode(Node):
         self.get_logger().info("Servo Controller Node initialized")
     
     def init_hardware(self):
-        """Initialize servo hardware or simulation"""
+        """Initialize ServoKit for PCA9685 servo control"""
+        if HW_AVAILABLE:
+            try:
+                # Initialize ServoKit with 16 channels (PCA9685 supports 16 channels)
+                self.kit = ServoKit(channels=16, address=self.i2c_address)
+                
+                self.get_logger().info(f"ServoKit initialized at I2C address 0x{self.i2c_address:02X}")
+            except Exception as e:
+                self.get_logger().error(f"Failed to initialize ServoKit: {str(e)}")
+                self.kit = None
+        
+        # Initialize servo objects for each leg and joint
         for leg in range(4):
             for joint in range(3):
                 servo_id = leg * 3 + joint
-                pin = self.servo_pins[leg][joint]
+                channel = self.servo_channels[leg][joint]
                 
-                if HW_AVAILABLE:
+                if HW_AVAILABLE and self.kit is not None:
                     try:
-                        # Create servo object with gpiozero
-                        servo = Servo(pin, min_pulse_width=0.5/1000, max_pulse_width=2.5/1000)
-                        self.servos[servo_id] = servo
-                        self.get_logger().info(f"Initialized servo {servo_id} on GPIO {pin}")
+                        # Configure servo parameters (optional - ServoKit has good defaults)
+                        # self.kit.servo[channel].set_pulse_width_range(500, 2500)  # Uncomment if needed
+                        self.servos[servo_id] = channel  # Store channel number for direct access
+                        self.get_logger().info(f"Initialized servo {servo_id} on ServoKit channel {channel}")
                     except Exception as e:
                         self.get_logger().error(f"Failed to initialize servo {servo_id}: {str(e)}")
                         self.servos[servo_id] = None
@@ -142,14 +157,17 @@ class ServoControllerNode(Node):
                 self.set_servo_angle(servo_id, new_angle)
     
     def set_servo_angle(self, servo_id, angle):
-        """Set physical servo to specified angle"""
-        if self.servos[servo_id] is not None and HW_AVAILABLE:
+        """Set physical servo to specified angle using ServoKit"""
+        if self.servos[servo_id] is not None and HW_AVAILABLE and self.kit is not None:
             try:
-                # Convert angle (0-180°) to servo value (-1 to +1)
-                servo_value = (angle - 90.0) / 90.0
-                servo_value = max(-1.0, min(1.0, servo_value))
+                # Clamp angle to valid range (0-180°)
+                clamped_angle = max(0.0, min(180.0, angle))
                 
-                self.servos[servo_id].value = servo_value
+                # Get the channel number for this servo
+                channel = self.servos[servo_id]
+                
+                # Set servo angle directly using ServoKit
+                self.kit.servo[channel].angle = clamped_angle
                 
             except Exception as e:
                 self.get_logger().error(f"Error setting servo {servo_id}: {str(e)}")
@@ -159,11 +177,18 @@ class ServoControllerNode(Node):
     
     def destroy_node(self):
         """Cleanup when node shuts down"""
-        if HW_AVAILABLE:
-            for servo in self.servos.values():
-                if servo is not None:
-                    servo.close()
-            GPIO.cleanup()
+        if HW_AVAILABLE and self.kit is not None:
+            try:
+                # ServoKit cleanup (automatically handled by library)
+                # Optional: Set all servos to neutral position
+                for servo_id in range(12):
+                    if self.servos[servo_id] is not None:
+                        channel = self.servos[servo_id]
+                        self.kit.servo[channel].angle = 90.0  # Neutral position
+                
+                self.get_logger().info("ServoKit cleanup completed")
+            except Exception as e:
+                self.get_logger().error(f"Error during ServoKit cleanup: {str(e)}")
         super().destroy_node()
 
 

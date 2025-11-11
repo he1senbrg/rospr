@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
 package_name = 'spider_hardware'
 
@@ -10,8 +12,14 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
+        (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
+        (os.path.join('share', package_name, 'scripts'), glob('scripts/*.py')),
     ],
-    install_requires=['setuptools'],
+    install_requires=[
+        'setuptools',
+        'adafruit-circuitpython-servokit',
+    ],
     zip_safe=True,
     maintainer='loki',
     maintainer_email='loki@todo.todo',
@@ -25,6 +33,8 @@ setup(
     entry_points={
         'console_scripts': [
             'servo_controller_node = spider_hardware.servo_controller_node:main',
+            'test_servos = scripts.test_servos:main',
+            'servo_diagnostics = scripts.diagnostics:main',
         ],
     },
 )

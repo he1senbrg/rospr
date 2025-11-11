@@ -1,0 +1,22 @@
+# Servo Controller Configuration for PCA9685
+servo_controller_node:
+  ros__parameters:
+    # PCA9685 I2C configuration
+    i2c_address: 0x40  # Default PCA9685 address (can be 0x40-0x7F)
+    
+    # Servo channel mapping on PCA9685 (channels 0-15)
+    # 12 servos total: 4 legs × 3 joints each
+    servo_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    
+    # Servo angle limits (degrees)
+    min_angle: 0.0
+    max_angle: 180.0
+    
+    # Control loop frequency (Hz)
+    servo_rate: 50.0
+    
+    # Servo channel assignment by leg and joint:
+    # Leg 0 (front-right): channels 0, 1, 2 (coxa, femur, tibia)
+    # Leg 1 (front-left):  channels 3, 4, 5 (coxa, femur, tibia)
+    # Leg 2 (back-right):  channels 6, 7, 8 (coxa, femur, tibia)  
+    # Leg 3 (back-left):   channels 9, 10, 11 (coxa, femur, tibia)
